@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!-- saved from url=(0049)https://people.umass.edu/~yangzhou/scenegraphnet/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>RigNet: Neural Rigging for Articulated Characters</title>
+
+<link media="all" href="./style.css" type="text/css" rel="stylesheet">
+<style type="text/css" media="all">
+
+pre{    
+  display: block;
+    padding: 4px;
+    margin: 0 0 1px;
+    font-size: 13px;
+    line-height: 1.42857143;
+    color: #333;
+    word-break: break-all;
+    word-wrap: break-word;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+img {
+	PADDING-RIGHT: 0px;
+	PADDING-LEFT: 10px;
+	FLOAT: right;
+	PADDING-BOTTOM: 10px;
+	PADDING-TOP: 10px
+}
+#content {
+	MARGIN-LEFT: auto;
+ WIDTH: expression(document.body.clientWidth > 925? "925px": "auto" );
+	MARGIN-RIGHT: auto;
+	TEXT-ALIGN: left;
+	max-width: 925px
+}
+body {
+	TEXT-ALIGN: center
+}
+.harlow {
+    font-family: "Times New Roman";
+    font-size: 16px;
+}
+</style>
+</head>
+<body>
+<div id="content">
+  <h1 align="center">RigNet: Neural Rigging for Articulated Characters</h1>
+  <div align="center">
+  <ul id="people" align="center">
+    <a href="https://people.cs.umass.edu/~zhanxu/">Zhan Xu</a> <a>, </a>
+    <a href="https://people.umass.edu/yangzhou/">Yang Zhou</a> <a>, </a>
+    <a href="http://people.cs.umass.edu/~kalo/">Evangelos Kalogerakis</a> <a>, </a>
+    <a href="http://www.chrislandreth.com/about-chris/">Chris Landreth</a> <a>, </a>
+    <a href="https://www.dgp.toronto.edu/~karan/">Karan Singh</a> <a>, </a>
+  </ul>
+</div>
+
+  <p align="center"><i>SIGGRAPH 2020</i></p>
+
+  <p><img src="teaser.png" width="925" align="center" style="padding: 30px 0px 10px 0px"></p>
+
+  <h2>Abstract</h2>
+  <p align="justify">We present RigNet, an end-to-end automated method for producing animation
+rigs from input character models. Given an input 3D model representing an articulated character, RigNet predicts a skeleton that matches the animator expectations in joint placement and topology. It also estimates surface skin weights based on the predicted skeleton. Our method is based on a deep architecture that directly operates on the mesh representation without making assumptions on shape class and structure. The architecture is trained on a large and diverse collection of rigged models, including their mesh, skeletons and corresponding skin weights. Our evaluation is three-fold: we show better results than prior art when quantitatively compared to animator rigs; qualitatively we show that our rigs can be expressively posed and animated at multiple levels of detail; and fnally, we evaluate the impact of various algorithm choices on our output rigs. </p>
+  <!-- img src="scene_graph_archi.png" width="925" align="center" style="padding: 0px 0px 20px 0px" -->
+  <!--i mg src="network_flow.png" width="925" align="center" style="padding: 30px 0px 0px 0px" -->
+  <!-- p align="center">Figure 1. Message passing and underlying neural network architecture </p -->
+  
+  <br>
+  <h2>Paper &amp; Supp.</h2>
+  Coming soon!
+  <!--<a href="http://people.cs.umass.edu/~zhanxu/papers/AnimSkelVolNet.pdf">AnimSkelVolNet.pdf</a>, 3.98MB<br>
+  <a href="http://people.cs.umass.edu/~zhanxu/papers/AnimSkelVolNet_supp.pdf">AnimSkelVolNet_supp.pdf</a>, 88KB<br>-->
+  
+  <h2>Video</h2>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/J90VETgWIDg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  
+   <!--<a href="http://people.cs.umass.edu/~zhanxu/projects/AnimSkelVolNet/3DV19-skeleton-poster.pdf">3DV19-skeleton-poster.pdf</a>, , 4.91MB<br> -->
+ 
+  </p><h2>Source Code &amp; Data</h2>
+  <p>Github code: <a href="https://github.com/zhan-xu/RigNet">https://github.com/zhan-xu/RigNet</a></p>
+  <p>Dataset: <a href="https://umass.box.com/s/448zm5iw1ewbq4l2kdll6q99v5y3q4pw"><b class="harlow">ModelsResource-RigNetv1</b> </a> </p>
+
+<h2>Citation</h2>
+  If you use our dataset or code, please cite the following papers.
+  <pre>
+  @InProceedings{AnimSkelVolNet,
+    title={Predicting Animation Skeletons for 3D Articulated Models via Volumetric Nets},
+    author={Zhan Xu and Yang Zhou and Evangelos Kalogerakis and Karan Singh},
+    booktitle={2019 International Conference on 3D Vision (3DV)},
+    year={2019}
+  }</pre>
+  <pre>
+  @article{RigNet,
+    title={RigNet: Neural Rigging for Articulated Characters},
+    author={Zhan Xu and Yang Zhou and Evangelos Kalogerakis and Chris Landreth and Karan Singh},
+    journal={ACM Trans. on Graphics},
+    year={2020},
+    volume={39}
+  }</pre>  
+
+  <h2> Acknowledgements </h2>
+  <p>This research is partially funded by NSF (EAGER-1942069) and NSERC. Our experiments were performed in the UMass GPU cluster obtained under the Collaborative Fund managed by the Massachusetts Technology Collaborative.</p>
+</div>
+
+
+</body></html
